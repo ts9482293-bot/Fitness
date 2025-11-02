@@ -1276,6 +1276,9 @@ ul{
         margin-left: auto;
         max-width: 200px;
     }
+    .title2{
+        font-size: 20px !important;
+    }
     .real-cont{
         top: 30% !important;
     }
