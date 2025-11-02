@@ -4,7 +4,7 @@
 }
 @font-face {
     font-family: "clash-display";
-    src: url(../font/clash-display.css);
+    src: url(../font/ClashDisplay-Regular.otf);
 }
 *{
     margin: 0;
@@ -15,6 +15,9 @@ body,
 html{
     overflow-x: hidden;
     
+}
+body{
+    font-family: "clash-display" , sans-serif;
 }
 :root{
     --primary-color:yellow;
@@ -35,7 +38,7 @@ ul{
 .title2{
     font-size: 27px;
     font-weight: bold;
-    font-family: "akira", sans-serif;
+    font-family: "akira", sans-serif !important;
 }
 .title3{
     font-size: 48px;
@@ -75,9 +78,10 @@ ul{
 .navbar-nav{
     background: var(--background-color);
     border-radius: 56px;
-    margin-left: 12px;
+    margin-left: 12px !important;
     max-width: 1305px;
     align-items: center;
+    margin-right: 12px !important;
 }
 .nav-logo>a{
     width: 100%;
@@ -89,6 +93,7 @@ ul{
 }
 .nav-link{
     padding: 0 !important;
+    color: var(--text-color);
 }
 .nav-item{
     padding: 20px 21px;
@@ -128,9 +133,17 @@ ul{
     object-fit: contain;
 }
 .login-btn{
-    padding: 27px 57px 27px 41px;
+    padding: 27px 27px 27px 41px;
     border-radius: 37.5px;
     outline: 2px solid var(--primary-color);
+    max-width: 319px;
+    color: var(--btn-color);
+    background: rgba(255, 247, 0, 0.5);
+   display: flex;
+   align-items: center;
+}
+.btn-icon{
+    padding: 5px;
 }
 .offcanvas{
     flex-direction: row;
@@ -138,17 +151,18 @@ ul{
 .title1{
     font-size: 141px;
     font-weight: bolder;
-    font-family: "akira", sans-serif;
+    font-family: "akira", sans-serif !important;
 }
 /* banner-sec */
 
 .banner-sec{
     background: url(../fitnessimg/WhatsApp\ Image\ 2025-10-17\ at\ 15.16.39.jpeg) no-repeat center/cover;
     min-height: 100vh; 
+    padding: 26px 0;
 }
 .banner-container{
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   left: 0;
   right: 0;
   max-width: 100%;
@@ -157,7 +171,7 @@ ul{
 .banner-header>.title1{
     color: var(--text-color);
     max-width: 550px;
-    
+    margin-bottom: 100px;
 }
 .visit-btn{
     font-size: 33px;
@@ -223,7 +237,7 @@ ul{
     position: absolute;
     right: -70px;
 }
-.sub-img{
+.sub-img>img{
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -282,18 +296,18 @@ ul{
       /* position: relative; */
       width: 592px !important;
       border: 1px solid var(--btn-color);
-      background: url(../fitnessimg/Frame\ 229\ \(1\).png)no-repeat center/cover;
+      background: url(../fitnessimg/Frame\ 230\ \(4\).png)no-repeat center/cover;
       height: 332px;
 }
 .second-slider-card{
-    background: url(../fitnessimg/sliderimg.png)no-repeat center/cover;
+    background: url(../fitnessimg/Frame\ 230\ \(3\).png)no-repeat center/cover;
     height: 332px !important;
       /* position: relative; */
       width: 592px !important;
       border: 1px solid var(--btn-color);
 }
 .last-slider-card{
-    background: url(../fitnessimg/sliderimg3.png)no-repeat center/cover;
+    background: url(../fitnessimg/Frame\ 230\ \(4\).png)no-repeat center/cover;
 }
 .slider-card-title{
     position: absolute;
@@ -331,6 +345,28 @@ ul{
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+.card-one{
+    font-size: 139px;
+    font-weight: bolder;
+    font-family: "akira" , sans-serif;
+    color: var(--slider-color) !important;
+    -webkit-text-stroke: 2px var(--card-text-color);
+            /* text-stroke: 2px rgba(255, 255, 255, 0.8); */
+            position: absolute;
+            bottom: 20%;
+            left: 25%;
+}
+.card-three{
+     font-size: 139px;
+    font-weight: bolder;
+    font-family: "akira" , sans-serif;
+    color: var(--slider-color) !important;
+    -webkit-text-stroke: 2px var(--card-text-color);
+            /* text-stroke: 2px rgba(255, 255, 255, 0.8); */
+            position: absolute;
+            bottom: 20%;
+            left: 15%;
 }
 /* gym-sec */
 .gym-img{
@@ -399,7 +435,40 @@ ul{
     color: var(--text-color);
     padding: 50px 0;
     text-align: left;
-    border-bottom: 1px solid var(--text-color);
+    font-family: "akira" , sans-serif;
+    margin-right: auto;
+}
+.services-sub-img{
+    transition: all 0.5s linear;
+    display: flex;
+    width: 300px;
+    margin-left: auto;
+}
+.services-box{
+    width: 46px;
+    margin-left: auto;
+}
+.services-box>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.services-sub-img>.service-hover-img{
+    width:0%;
+    transition: 0.2s all linear;
+}
+.services-sub-img>.service-hover-img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.services-sub-img:hover>.service-hover-img{
+    width: 338.35px;
+}
+.personal{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid var(--text-color);
 }
 .services-header>.title2{
     font-size: 31px;
@@ -416,7 +485,14 @@ ul{
     color: var(--text-color);
     max-width: 356px;
 }
-
+.card-right-icon{
+    width: 29px;
+}
+.card-right-icon>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 .about-img{
     max-width: 848px;
     margin-top: 169px;
@@ -433,11 +509,11 @@ ul{
     margin-bottom: 82px;
 }
 .card{
-    margin-bottom: 24px;
+    margin: 0 auto 24px;
     background: rgba(255, 255, 0, 0.4);
 }
 .card-title{
-    color: var(--text-color) !important;
+    color: var(--text-color);
 }
 .card-text{
     color: var(--text-color) !important;
@@ -458,7 +534,7 @@ ul{
     height: 600px;
 }
 .swiper-card-img{
-    width: 400px;
+    width: 600px;
     position: absolute;
     top: -12%;
     left: 50%;
@@ -482,20 +558,20 @@ ul{
     width: 592px !important;
     position: relative;
     height: 452px;
-    background: var(--slider-color);
+    background: url(../fitnessimg/Frame\ 242\ \(1\).png)no-repeat center/cover;
 }
 .swiper-card-img>img{
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 .swiper-card-title{
     font-size: 16px;
     font-weight: bolder;
     color: var(--text-color);
     position: absolute;
-    bottom: 20%;
-    left: 18%;
+    bottom: 7%;
+    left: 7%;
     text-transform: uppercase;
 }
 .swiper-second-title{
@@ -534,6 +610,20 @@ ul{
     font-size: 53px;
     font-weight: 300;
 }
+.swiper-pagination{
+    width: 20px;
+     position: absolute;
+      top: 100%;
+  bottom: 50px;     
+  left: 50%;
+    transform: translateY(50%);
+}
+.swiper-pagination-bullet{
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 0 !important;
+    background: var(--btn-color)
+}
 /* choose-sec */
 .choose-sec{
     background: var(--secondary-color);
@@ -561,6 +651,7 @@ ul{
     color: var(--text-color);
     padding: 0 !important;
     margin-bottom: 10px;
+    max-width: 50%;
 }
 .choose-card{
     background: var(--slider-color);
@@ -726,8 +817,24 @@ ul{
 .social-link{
     color: var(--text-color);
 }
+.social-link:hover{
+    color: var(--btn-color);
+}
 .social-list>ul{
     padding: 0;
+}
+.social-list>ul>li{
+    display: flex;
+    max-width: 500px;
+}
+.social-icon{
+   width: 19px;
+   margin-left: auto;
+}
+.social-icon>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .footer-header{
     font-size: 42px;
@@ -819,6 +926,21 @@ ul{
     color: var(--primary-color);
     margin-left: auto;
     margin-right: 24px;
+    transition: 0.2s ease-in-out;
+    padding: 10px;
+}
+.footer-btn:hover{
+    background: transparent;
+    outline: 1px solid var(--btn-color);
+}
+.btn-icon{
+    width: 37px;
+    margin-left: auto;
+}
+.btn-icon>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 
@@ -829,6 +951,12 @@ ul{
     .btn{
         width: 450px;
     }
+    .title1{
+        font-size: 120px;
+    }
+    .services-traning{
+        font-size: 30px;
+    }
 }
 @media screen and (max-width:1600px){
     .choose-card{
@@ -837,14 +965,29 @@ ul{
     .btn{
         width: 400px;
     }
+    .banner-cont>p{
+        font-size: 22px;
+    }
+    .nav-link{
+        font-size: 12px;
+    }
+    .services-traning{
+        font-size: 30px;
+    }
 }
 @media screen and (max-width:1500px){
     .nav-item{
         padding: 10px;
     }
+    .title1{
+        font-size: 110px;
+    }
+    .nav-link{
+        font-size: 12px;
+    }
 }
 
-@media screen and (max-width:1400px){
+@media screen and (max-width:1399px){
     .navbar-nav,
     .navbar-nav>li,
     .cart-img{
@@ -855,11 +998,21 @@ ul{
         width: 324px !important;
         margin: 0 auto;
     }
+    .login-btn{
+        margin: 0 auto;
+    }
+    .navbar-toggler{
+        background: var(--text-color);
+    }
     .offcanvas-header{
         margin-left: auto;
+        color: var(--secondary-color);
+        font-size: 1.4rem;
+        display: block !important;
     }
     .offcanvas{
-        flex-direction: column;
+        /* flex-direction: column !important; */
+        background: blue;
     }
      .choose-card{
         margin: 10px auto !important;
@@ -870,6 +1023,83 @@ ul{
     }
     .cart-img{
         margin: 10px 0;
+    }
+    .title1{
+        font-size: 90px;
+    }
+    .banner-cont>p{
+        font-size: 18px;
+    }
+    .banner-header>.title1{
+        margin-bottom: 50 !important;
+    }
+    .gym-cont-header{
+        font-size: 26px;
+    }
+    .call-para{
+        font-size: 20px;
+    }
+    .navbar-toggle{
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        position: relative;
+         transition: 0.5s all linear;
+         margin-left: auto;
+         z-index: 999;
+    }
+    .navbar-toggle>span{
+        height: 3px;
+        width: 30px;
+        background-color: var(--secondary-color);
+        position: absolute;
+        top: 14px;
+        left: 0;
+        right: 0;
+         transition: 0.5s all linear;
+    }
+    .navbar-toggle::after{
+        content: '';
+         height: 3px;
+        width: 30px;
+        background-color: var(--secondary-color);
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 3px;
+         transition: 0.5s all linear;
+    }
+    .navbar-toggle::before{
+        content: '';
+         height: 3px;
+        width: 30px;
+        background-color: var(--secondary-color);
+        position: absolute;
+        top: 3px;
+        right: 0;
+        left: 0;
+         transition: 0.5s all linear;
+    }
+    .login-btn{
+    width: 200px !important;
+    margin-top: 10px;
+   }
+    /* .navbar-toggle.open::after{
+        display: none !important;
+        transition: 0.5s all linear;
+    }
+    .navbar-toggle.open>span{
+       transform: rotate(45deg) translate(-6px);
+        transition: 0.5s all linear;
+    }
+    .navbar-toggle.open::before{
+         transform: rotate(-45deg) translate(-6px);
+          transition: 0.5s all linear;
+    } */
+}
+@media screen and (max-width:1399px){
+    .offcanvas{
+        flex-direction: column !important;
     }
 }
 @media screen and (max-width:1200px){
@@ -901,6 +1131,9 @@ ul{
    }
    .location-sub-cont{
     font-size: 24px;
+   }
+   .banner-header>.title1{
+    margin-bottom: 30px ;
    }
 }
 @media screen and (max-width:992px){
@@ -949,7 +1182,7 @@ ul{
         height: 200px;
     }
     .swiper-card-img{
-        width: 200px;
+        width: 250px;
     }
     .swiper-second-img{
         width: 150px;
@@ -972,6 +1205,14 @@ ul{
     .gym-img{
         max-width: 6500px;
     }
+    .card-one{
+        bottom: -10%;
+        font-size: 100px;
+    }
+    .card-three{
+        font-size: 100px;
+        bottom: -10%;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -992,6 +1233,9 @@ ul{
         margin-left: auto;
         max-width: 200px;
         margin-right: 15px;
+    }
+    .services-traning{
+        font-size:  26px !important;
     }
     .real-cont{
         top: 40%;
@@ -1055,11 +1299,38 @@ ul{
     .footer-list>ul>li{
         padding: 5px;
     }
+    .footer-link{
+        font-size: 12px;
+    }
     .choose-card{
         width: 350px !important;
     }
     .btn{
         width: 300px;
+    }
+    .footer-btn{
+        color: transparent;
+        width: 150px;
+        font-size: 0 !important;
+    }
+    .sub-banner-img{
+        width: 50px;
+        right: -70px;
+    }
+    .sub-fit-img{
+        width: 50px;
+        right: -110px;
+    }
+    .sub-img{
+        width: 50px;
+        right: -35px;
+    }
+    .banner-img{
+        width: 50px;
+        margin: 0;
+    }
+    .banner-cont>p{
+        font-size: 16px;
     }
 }
 @media screen and (max-width:480px){

@@ -19,3 +19,21 @@ const swiper = new Swiper('.swiper', {
         clickable: true,
       },
     });
+
+    const navtoggler = document.querySelector(".navbar-toggle");
+    const offcanvas = document.querySelector(".offcanvas-header")
+
+   navtoggler.addEventListener("click", ()=>{
+     if(close==true){
+        close=false;
+        navtoggler.classList.add("open");
+        // body.style.overflow = "hidden";
+    }
+   });
+    offcanvas.addEventListener("click", ()=>{
+     if(close==true){
+        close=false;
+        navtoggler.classList.remove("open");
+        // body.style.overflow = "hidden";
+    }
+   });

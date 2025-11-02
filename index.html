@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+    <!-- font-aswome-cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- bootsrap-css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- swiper-css -->
@@ -20,19 +22,19 @@
     <div class="nav-logo">
       <a class="navbar-brand" href="#"><img src="./fitnessimg/Logo (2).png" alt=""></a>
     </div>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
+    </div>
     <div class="offcanvas offcanvas-end " id="navbarSupportedContent">
       <div class="offcanvas-header" data-bs-dismiss="offcanvas" aria-label="Close">
-        x
+        <i class="fa-solid fa-x"></i>
       </div>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link " aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
+          <a class="nav-link" href="index2.html">About Us</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -66,7 +68,11 @@
       </form>
       <div class="cart-img"><img src="./fitnessimg/Cart.png" alt=""></div> -->
       <div class="nav-btn">
-        <div class="login-btn">Login/Create Account</div>
+        <div class="login-btn">Login/Create Account
+           <div class="btn-icon">
+              <img src="./fitnessimg/btn-icon.png" alt="">
+            </div>
+        </div>
       </div>
     </div>
   </div>
@@ -76,7 +82,7 @@
     <section class="banner-sec">
       <div class="container banner-container">
   <div class="row banner-row align-items-start">
-    <div class="col col-xxl-6 col-xl-6 col-12 banner-col">
+    <div class="col col-xxl-4 col-xl-4 col-12 banner-col">
        <div class="banner-cont">
         <p>Lorem ipsum dolor sit amet consectetur.
            <br>Nullam vitae leo sed scelerisque.</p>
@@ -93,7 +99,7 @@
           Scroll
         </p>
     </div>
-    <div class="col-xxl-6 col-xl-6 col-12">
+    <div class="col-xxl-8 col-xl-8 col-12">
      <div class="banner-header">
         <h1 class="title1">
           FocusFuel <div></div>
@@ -122,6 +128,11 @@
         <div class="slider-card-img">
           <img src="./fitnessimg/Image1 1.png" alt="Personal Training">
         </div>
+        <div class="slider-back">
+            <div class="card-title card-one">
+            01
+          </div>
+        </div>
         <div class="card-body">
           <div class="slider-card-title">
             <div class="title-img">
@@ -139,6 +150,11 @@
         <div class="slider-card-img">
           <img src="./fitnessimg/full-length-portrait-healthy-muscular-sportswoman-(1) 2.png" alt="Personal Training">
         </div>
+         <div class="slider-back">
+            <div class="card-title card-one">
+            02
+          </div>
+        </div>
         <div class="card-body">
           <div class="slider-card-title second-card-title">
             <div class="title-img">
@@ -153,6 +169,11 @@
       <div class="slider-card last-slider-card">
         <div class="slider-card-img slider-img-last">
           <img src="./fitnessimg/ccv-1 1.png" alt="Personal Training">
+        </div>
+         <div class="slider-back">
+            <div class="card-title card-three">
+            03
+          </div>
         </div>
         <div class="card-body">
           <div class="slider-card-title slider-last-title">
@@ -181,7 +202,7 @@
     <section class="gym-sec">
       <div class="container">
        <div class="row">
-    <div class="col-xxl-5 col-12">
+    <div class="col-xxl-5 col-xl-5 col-12">
       <div class="gym-header location-header">
          <div class="header-img"><img src="./fitnessimg/Ellipse 5.png" alt=""></div>
         <h2 class="title2">
@@ -193,7 +214,7 @@
         <img src="./fitnessimg/Rectangle 4 (1).png" alt="">
       </div>
     </div>
-    <div class="col-xxl-7 col-12">
+    <div class="col-xxl-7 col-xl-7 col-12">
      <div class="gym-sub-header">
       <h3 class="title3">
         Empowering Every Body to Move Stronger,
@@ -253,9 +274,38 @@
     </div>
     <div class="col-xl-7 col-xxl-7 col-12">
      <div class="services-cont">
-      <div class="services-traning">PERSONAL TRAINING</div>
-      <div class="services-traning">GROUP TRAINING </div>
-      <div class="services-traning">CORPORATE TRAINING</div>
+    <div class="personal">
+        <div class="services-traning">PERSONAL TRAINING</div>
+     <div class="services-sub-img">
+        <div class="service-hover-img">
+        <img src="./fitnessimg/Rectangle 5 (1).png" alt="">
+      </div>
+        <div class="services-box">
+          <img src="./fitnessimg/hero-icon.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="personal">
+       <div class="services-traning">GROUP TRAINING </div>
+      <div class="services-sub-img">
+        <div class="service-hover-img">
+        <img src="./fitnessimg/Rectangle 5 (1).png" alt="">
+      </div>
+        <div class="services-box">
+          <img src="./fitnessimg/hero-icon.png" alt="">
+        </div>
+      </div>
+      </div>
+      <div class="personal">
+        <div class="services-traning">CORPORATE TRAINING</div>
+      <div class="services-sub-img">
+        <div class="service-hover-img">
+        <img src="./fitnessimg/Rectangle 5 (1).png" alt="">
+      </div>
+        <div class="services-box">
+          <img src="./fitnessimg/hero-icon.png" alt="">
+        </div>
+      </div>
      </div>
     </div>
   </div>
@@ -279,8 +329,13 @@
          Turn your  workout into a lifestyle that moves you forward
       </div>
   <div class="row align-items-start">
-    <div class="col">
-     <div class="card" style="width: 18rem;">
+    <div class="col-12 col-xl-6 col-xxl-6 col-md-6 col-lg-6">
+     <div class="card about-card" style="width: 18rem;">
+       <div class="card-body">
+   <div class="card-right-icon">
+    <img src="./fitnessimg/righticon.png" alt="">
+  </div>
+  </div>
   <div class="card-body">
     <h5 class="card-title">Certified & Experience Coachees</h5>
     <p class="card-text">Lorem ipsum dolor sit amet consectetur. 
@@ -290,6 +345,11 @@
   </div>
 </div>
 <div class="card" style="width: 18rem;">
+ <div class="card-body">
+   <div class="card-right-icon">
+    <img src="./fitnessimg/righticon.png" alt="">
+  </div>
+ </div>
   <div class="card-body">
     <h5 class="card-title">Certified & Experience Coachees</h5>
     <p class="card-text">Lorem ipsum dolor sit amet consectetur.
@@ -298,7 +358,12 @@
    
   </div>
 </div>
-<div class="card" style="width: 18rem;">
+<div class="card " style="width: 18rem;">
+   <div class="card-body">
+   <div class="card-right-icon">
+    <img src="./fitnessimg/righticon.png" alt="">
+  </div>
+  </div>
   <div class="card-body">
     <h5 class="card-title">Certified & Experience Coachees</h5>
     <p class="card-text">Lorem ipsum dolor sit amet consectetur.
@@ -307,8 +372,13 @@
   </div>
 </div>
     </div>
-    <div class="col">
+    <div class="col-xl-6 col-xxl-6 col-lg-6 col-md-6 col-12">
       <div class="card" style="width: 18rem;">
+         <div class="card-body">
+   <div class="card-right-icon">
+    <img src="./fitnessimg/righticon.png" alt="">
+  </div>
+  </div>
   <div class="card-body">
     <h5 class="card-title">Certified & Experience Coachees</h5>
     <p class="card-text">Lorem ipsum dolor sit amet consectetur.
@@ -318,6 +388,11 @@
   </div>
 </div>
 <div class="card" style="width: 18rem;">
+   <div class="card-body">
+   <div class="card-right-icon">
+    <img src="./fitnessimg/righticon.png" alt="">
+  </div>
+  </div>
   <div class="card-body">
     <h5 class="card-title">Certified & Experience Coachees</h5>
     <p class="card-text">Lorem ipsum dolor sit amet consectetur.
@@ -327,6 +402,11 @@
   </div>
 </div>
 <div class="card" style="width: 18rem;">
+   <div class="card-body">
+   <div class="card-right-icon">
+    <img src="./fitnessimg/righticon.png" alt="">
+  </div>
+  </div>
   <div class="card-body">
     <h5 class="card-title">Certified & Experience Coachees</h5>
     <p class="card-text">Lorem ipsum dolor sit amet consectetur.
@@ -368,7 +448,7 @@
     <div class="swiper-slide">
         <div class="swiper-card">
         <div class="swiper-card-img">
-          <img src="./fitnessimg/swiper-img.png" alt="Personal Training">
+          <img src="./fitnessimg/coaches-img(1).png" alt="Personal Training">
         </div>
         <div class="card-body">
           <div class="swiper-card-title">
@@ -422,9 +502,7 @@
     ...
   </div>
   <!-- If we need pagination -->
-  <div class="swiper-pagination">
-  </div>
-  
+ <div class="swiper-pagination"></div>
 
   <!-- If we need navigation buttons -->
   <div class="swiper-button-prev"></div>
@@ -577,9 +655,21 @@
       </div>
       <div class="social-list">
         <ul>
-          <li><a href="" class="social-link">Insagram</a></li>
-          <li><a href="" class="social-link">Facebook</a></li>
-          <li><a href="" class="social-link">Youtube</a></li>
+          <li><a href="" class="social-link">Insagram</a>
+            <div class="social-icon">
+              <img src="./fitnessimg/arrowsocail.png" alt="">
+            </div>
+          </li>
+          <li><a href="" class="social-link">Facebook</a>
+             <div class="social-icon">
+              <img src="./fitnessimg/arrowsocail.png" alt="">
+            </div>
+          </li>
+          <li><a href="" class="social-link">Youtube</a>
+             <div class="social-icon">
+              <img src="./fitnessimg/arrowsocail.png" alt="">
+            </div>
+          </li>
         </ul>
       </div>
     </div>
@@ -614,7 +704,11 @@
        <form class="footer-form" action="">
        <div class="email-cont">
          <input type="email" class="email" placeholder="Email input" name="" id="">
-          <a href="" class="footer-btn">Subscribe</a>
+          <a href="" class="footer-btn">Subscribe
+            <div class="btn-icon">
+              <img src="./fitnessimg/btn-icon.png" alt="">
+            </div>
+          </a>
        </div>
         <!-- <div class="subscribe-btn">
           <a href="" class="footer-btn">Subscribe</a>
